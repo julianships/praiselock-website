@@ -49,7 +49,13 @@ export default function Home() {
             <div className={styles.appCard}>
               <div className={styles.phone}>
                 <div className={styles.screen}>
-                  <div className={styles.screenIcon}>🙏</div>
+                  <Image
+                    src="/logo.png"
+                    alt="Praise Lock"
+                    width={80}
+                    height={80}
+                    className={styles.screenLogo}
+                  />
                   <span className={styles.screenLabel}>praise lock</span>
                 </div>
               </div>

@@ -127,15 +127,10 @@
   font-family: var(--font-body);
 }
 
-.screenIcon {
-  width: 60px;
-  height: 60px;
-  background: var(--accent);
-  border-radius: 14px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 22px;
+.screenLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 18px;
 }
 
 /* ── Footer ──────────────────────────────────────── */
