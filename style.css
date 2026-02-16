@@ -1,0 +1,313 @@
+/* ── Design Tokens ────────────────────────────────── */
+:root {
+    --accent: #4A9EF7;
+    --text-primary: #000000;
+    --text-muted: #6b7280;
+    --bg: #ffffff;
+    --font: ui-rounded, -apple-system-rounded, "SF Pro Rounded", -apple-system, system-ui, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+/* ── Reset & Base ────────────────────────────────── */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+    font-family: var(--font);
+    background: var(--bg);
+    color: var(--text-primary);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* ── Page Container ──────────────────────────────── */
+.page {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 40px 80px;
+}
+
+/* ── Hero ─────────────────────────────────────────── */
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    max-width: 1200px;
+    width: 100%;
+}
+
+/* ── Left Column ─────────────────────────────────── */
+.hero__content {
+    flex: 1;
+    max-width: 620px;
+}
+
+.hero__headline {
+    font-size: 96px;
+    font-weight: 600;
+    line-height: 1.1;
+    letter-spacing: normal;
+    color: var(--text-primary);
+    margin-bottom: 12px;
+}
+
+.hero__headline .accent {
+    color: var(--accent);
+    font-weight: 700;
+}
+
+.hero__subtitle {
+    font-size: 30px;
+    font-weight: 400;
+    color: var(--text-muted);
+    margin-bottom: 32px;
+}
+
+.hero__subtitle .accent {
+    color: var(--accent);
+    font-weight: 500;
+}
+
+/* ── Store Badges ────────────────────────────────── */
+.hero__badges {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+.hero__badge {
+    display: inline-block;
+    transition: opacity 0.2s ease;
+}
+
+.hero__badge:hover {
+    opacity: 0.85;
+}
+
+.hero__badge img {
+    height: 83px;
+    width: auto;
+    display: block;
+}
+
+/* ── Right Column — App Card w/ Phone Mockup ─────── */
+.hero__image {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card {
+    width: 350px;
+    height: 622px;
+    background: var(--accent);
+    border-radius: 24px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: visible;
+}
+
+/* Phone mockup sitting on top of the card */
+.app-card__phone {
+    width: 240px;
+    height: 490px;
+    background: #1a1a1a;
+    border-radius: 36px;
+    border: 4px solid #333;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.15);
+}
+
+/* Phone screen area */
+.app-card__screen {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #e8f0fe 0%, #d4e4fd 100%);
+    border-radius: 32px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 20px;
+}
+
+.app-card__screen-label {
+    color: var(--accent);
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+}
+
+.app-card__screen-icon {
+    width: 60px;
+    height: 60px;
+    background: var(--accent);
+    border-radius: 14px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card__screen-icon span {
+    color: #fff;
+    font-size: 22px;
+    font-weight: 700;
+}
+
+/* Fallback: plain card with text (no phone mockup) */
+.app-card--simple {
+    width: 350px;
+    height: 622px;
+    background: var(--accent);
+    border-radius: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.app-card--simple span {
+    color: #fff;
+    font-size: 28px;
+    font-weight: 500;
+    letter-spacing: 0.02em;
+}
+
+/* When using a real image */
+.hero__image>img {
+    width: 350px;
+    height: 622px;
+    border-radius: 24px;
+    display: block;
+    object-fit: cover;
+}
+
+/* ── Footer ──────────────────────────────────────── */
+.footer {
+    text-align: center;
+    padding: 24px 16px 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footer__links {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.footer__links li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer__links li:not(:last-child)::after {
+    content: '•';
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.footer__links a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footer__links a:hover {
+    color: var(--accent);
+}
+
+.footer__copy {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 1100px) {
+    .page {
+        padding: 40px 48px;
+    }
+
+    .hero__headline {
+        font-size: 72px;
+    }
+
+    .hero__subtitle {
+        font-size: 24px;
+    }
+
+    .app-card,
+    .app-card--simple {
+        width: 280px;
+        height: 497px;
+    }
+
+    .app-card__phone {
+        width: 200px;
+        height: 410px;
+    }
+
+    .hero__badge img {
+        height: 60px;
+    }
+}
+
+@media (max-width: 768px) {
+    .page {
+        padding: 32px 24px;
+    }
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 40px;
+    }
+
+    .hero__headline {
+        font-size: 48px;
+    }
+
+    .hero__subtitle {
+        font-size: 20px;
+    }
+
+    .hero__badges {
+        justify-content: center;
+    }
+
+    .hero__badge img {
+        height: 50px;
+    }
+
+    .app-card,
+    .app-card--simple {
+        width: 260px;
+        height: 462px;
+    }
+
+    .app-card__phone {
+        width: 190px;
+        height: 390px;
+    }
+}
