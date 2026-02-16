@@ -1,0 +1,227 @@
+/* ── Inner Page Layout ────────────────────────────── */
+.pageWrapper {
+    max-width: 720px;
+    margin: 0 auto;
+    padding: 64px 32px 48px;
+}
+
+.backLink {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    color: var(--accent);
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 40px;
+    transition: opacity 0.2s ease;
+}
+
+.backLink:hover {
+    opacity: 0.7;
+}
+
+.pageTitle {
+    font-family: var(--font-display);
+    font-size: 48px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+    line-height: 1.15;
+}
+
+.pageSubtitle {
+    font-size: 18px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+    line-height: 1.5;
+}
+
+.lastUpdated {
+    font-size: 13px;
+    color: var(--text-muted);
+    margin-bottom: 48px;
+}
+
+/* ── Sections ────────────────────────────────────── */
+.section {
+    margin-bottom: 40px;
+}
+
+.sectionTitle {
+    font-family: var(--font-display);
+    font-size: 24px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 16px;
+}
+
+.sectionBody {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.sectionBody p {
+    margin-bottom: 12px;
+}
+
+.sectionBody ul {
+    padding-left: 20px;
+    margin-bottom: 12px;
+}
+
+.sectionBody li {
+    margin-bottom: 8px;
+}
+
+.sectionBody a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.sectionBody a:hover {
+    text-decoration: underline;
+}
+
+.sectionBody strong {
+    font-weight: 600;
+    color: var(--text-primary);
+}
+
+/* ── Contact Card ────────────────────────────────── */
+.contactCard {
+    background: #f0f7ff;
+    border: 1px solid #d4e4fd;
+    border-radius: 16px;
+    padding: 32px;
+    text-align: center;
+    margin-top: 48px;
+}
+
+.contactCard h3 {
+    font-family: var(--font-display);
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.contactCard p {
+    font-size: 15px;
+    color: var(--text-muted);
+    margin-bottom: 16px;
+}
+
+.contactLink {
+    display: inline-block;
+    background: var(--accent);
+    color: #fff;
+    padding: 12px 28px;
+    border-radius: 10px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 500;
+    transition: opacity 0.2s ease;
+}
+
+.contactLink:hover {
+    opacity: 0.85;
+}
+
+/* ── FAQ Accordion ───────────────────────────────── */
+.faq {
+    margin-bottom: 40px;
+}
+
+.faqItem {
+    border-bottom: 1px solid #e5e7eb;
+    padding: 20px 0;
+}
+
+.faqItem:first-child {
+    border-top: 1px solid #e5e7eb;
+}
+
+.faqQuestion {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--text-primary);
+    margin-bottom: 8px;
+}
+
+.faqAnswer {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.faqAnswer a {
+    color: var(--accent);
+    text-decoration: none;
+    font-weight: 500;
+}
+
+.faqAnswer a:hover {
+    text-decoration: underline;
+}
+
+/* ── Footer (reused on inner pages) ──────────────── */
+.footer {
+    text-align: center;
+    padding: 24px 16px 20px;
+    border-top: 1px solid #e5e7eb;
+}
+
+.footerLinks {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    flex-wrap: wrap;
+    margin-bottom: 8px;
+}
+
+.footerLinks li {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footerLinks li:not(:last-child)::after {
+    content: "•";
+    color: var(--text-muted);
+    font-size: 12px;
+}
+
+.footerLinks a {
+    color: var(--text-muted);
+    text-decoration: none;
+    font-size: 14px;
+    transition: color 0.2s ease;
+}
+
+.footerLinks a:hover {
+    color: var(--accent);
+}
+
+.footerCopy {
+    color: var(--text-muted);
+    font-size: 14px;
+}
+
+/* ── Responsive ──────────────────────────────────── */
+@media (max-width: 768px) {
+    .pageWrapper {
+        padding: 40px 20px 32px;
+    }
+
+    .pageTitle {
+        font-size: 36px;
+    }
+
+    .contactCard {
+        padding: 24px 20px;
+    }
+}

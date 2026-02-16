@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 import styles from "./page.module.css";
 
 export default function Home() {
@@ -59,10 +60,10 @@ export default function Home() {
 
       <footer className={styles.footer}>
         <ul className={styles.footerLinks}>
-          <li><a href="#">Terms of Service</a></li>
-          <li><a href="#">Privacy Policy</a></li>
-          <li><a href="#">Contact Us</a></li>
-          <li><a href="#">Manage Subscription</a></li>
+          <li><Link href="/privacy">Terms of Service</Link></li>
+          <li><Link href="/privacy">Privacy Policy</Link></li>
+          <li><Link href="/support">Contact Us</Link></li>
+          <li><Link href="/support">Manage Subscription</Link></li>
         </ul>
         <p className={styles.footerCopy}>© 2026 Praise Lock. All rights reserved.</p>
       </footer>
