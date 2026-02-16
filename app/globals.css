@@ -1,0 +1,35 @@
+/* ── Design Tokens ────────────────────────────────── */
+:root {
+  --accent: #4A9EF7;
+  --text-primary: #000000;
+  --text-muted: #6b7280;
+  --bg: #ffffff;
+  --font-body: var(--font-inter), ui-rounded, -apple-system, system-ui,
+    "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+  --font-display: ui-rounded, -apple-system-rounded, "SF Pro Rounded",
+    var(--font-inter), -apple-system, system-ui, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, sans-serif;
+}
+
+/* ── Reset & Base ────────────────────────────────── */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: var(--font-body);
+  background: var(--bg);
+  color: var(--text-primary);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
