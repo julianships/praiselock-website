@@ -50,9 +50,9 @@ export default function SupportPage() {
                     <div className={styles.faqItem}>
                         <h3 className={styles.faqQuestion}>how does praise lock work?</h3>
                         <p className={styles.faqAnswer}>
-                            praise lock keeps your phone locked until you take a moment to worship. when
-                            you try to unlock your phone, you'll be guided through a brief worship moment
-                            before gaining access.
+                            praise lock lets you block your social apps. when you try to open one of
+                            your blocked apps, it creates a moment of prayer — so you pray first, and
+                            then you're able to unblock your apps.
                         </p>
                     </div>
 
