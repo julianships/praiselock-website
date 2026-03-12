@@ -50,13 +50,13 @@ export default function Home() {
               <div className={styles.phone}>
                 <div className={styles.screen}>
                   <Image
-                    src="/logo.png"
-                    alt="Praise Lock"
-                    width={80}
-                    height={80}
-                    className={styles.screenLogo}
+                    src="/notification-tap.png"
+                    alt=""
+                    fill
+                    priority
+                    sizes="(max-width: 768px) 190px, (max-width: 1100px) 200px, 240px"
+                    className={styles.screenShot}
                   />
-                  <span className={styles.screenLabel}>praise lock</span>
                 </div>
               </div>
             </div>
