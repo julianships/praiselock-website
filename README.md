@@ -1,36 +1,52 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# praiselock-website
 
-## Getting Started
+Source for [praiselock.com](https://www.praiselock.com), the public website for Praise Lock.
 
-First, run the development server:
+This repo is the public site layer for the product: landing page, support, and privacy. It does not contain the private app code or the product systems behind the mobile experience.
+
+## Stack
+
+- Next.js
+- React
+- JavaScript
+- CSS modules
+
+## Local development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Then open `http://localhost:3000`.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+## Project structure
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+```text
+app/
+  page.js              Main homepage
+  privacy/             Privacy policy page
+  support/             Support page
+  layout.js            Root layout
+  *.css                Page and shared styling
 
-## Learn More
+public/
+  static assets and imagery
+```
 
-To learn more about Next.js, take a look at the following resources:
+## What this repo contains
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- public product marketing pages
+- support and privacy URLs
+- static branding and promotional assets
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## What it does not contain
 
-## Deploy on Vercel
+- the Praise Lock app source
+- internal subscriptions, analytics, or product logic
+- private mobile implementation details
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Notes
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- This repo is intended to be safe to share publicly as the website layer for the product.
+- The more technical parts of the product are better represented later through a narrow public case-study repo than by publishing the full private app.
