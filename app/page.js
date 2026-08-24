@@ -21,20 +21,14 @@ export default function Home() {
               <span className={styles.subtitleAccent}>worship</span>
             </p>
             <div className={styles.badges}>
-              <a href="#" className={styles.badge} aria-label="Download on the App Store">
+              <a
+                href="https://apps.apple.com/us/app/praise-lock-stop-focus-pray/id6759266143"
+                className={styles.badge}
+                aria-label="Download Praise Lock on the App Store"
+              >
                 <Image
                   src="https://developer.apple.com/assets/elements/badges/download-on-the-app-store.svg"
                   alt="Download on the App Store"
-                  width={250}
-                  height={83}
-                  className={styles.badgeImg}
-                  unoptimized
-                />
-              </a>
-              <a href="#" className={styles.badge} aria-label="Get it on Google Play">
-                <Image
-                  src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg"
-                  alt="Get it on Google Play"
                   width={250}
                   height={83}
                   className={styles.badgeImg}
