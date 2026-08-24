@@ -10,7 +10,7 @@ const inter = Inter({
 export const metadata = {
   title: "praise lock — lock your phone until you worship",
   description:
-    "praise lock keeps your phone locked until you take a moment to worship. available on iOS and Android.",
+    "praise lock keeps your phone locked until you take a moment to worship. available on iOS.",
 };
 
 export default function RootLayout({ children }) {

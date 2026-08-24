@@ -59,7 +59,8 @@ export default function SupportPage() {
                     <div className={styles.faqItem}>
                         <h3 className={styles.faqQuestion}>is praise lock available on both iOS and Android?</h3>
                         <p className={styles.faqAnswer}>
-                            yes! praise lock is available on both the App Store and Google Play Store.
+                            praise lock is currently available on the App Store. Android is not publicly
+                            available yet.
                         </p>
                     </div>
 
