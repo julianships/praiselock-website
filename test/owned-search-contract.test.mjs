@@ -15,6 +15,10 @@ test("owned-search page preserves the exact iOS listing and campaign ID", () => 
   assert.match(page, new RegExp(listing.replaceAll("/", "\\/")));
   assert.match(page, /seo_christian_app_blocker/);
   assert.equal((page.match(/data-campaign-id=/g) || []).length, 3);
+  assert.match(
+    page,
+    /canonical: "https:\/\/www\.praiselock\.com\/christian-app-blocker"/,
+  );
 });
 
 test("page does not advertise unavailable Android distribution", () => {

@@ -9,7 +9,9 @@ export const metadata = {
   title: "Christian app blocker for prayer before scrolling | Praise Lock",
   description:
     "Praise Lock pauses selected apps, guides a short prayer check-in, then unlocks them so Christians can put prayer before scrolling.",
-  alternates: { canonical: "/christian-app-blocker" },
+  alternates: {
+    canonical: "https://www.praiselock.com/christian-app-blocker",
+  },
 };
 
 const steps = [
